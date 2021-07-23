@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <section class="container header row">
+      <img class='trybewarts-header-logo' src="images/trybewarts-header-logo.svg" alt="trybe logo">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form action="" class="trybewarts-login">
+        <div class="ui small input"><input id="login" type="text" placeholder="Login" autofocus pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="required"></div>
+        <div class="ui small input"><input id="senha" type="text" placeholder='Senha' pattern="[0-9]+$" required="required"></div>
+        <button id="botão" class="ui primary button">Entrar</button>
+      </form>
+    </section>
+  </header>
+  <main class="row container">
+    <form action="" id="evaluation-form" class="ui form" method="GET">
+      <h2 class="ui header">Forms:</h2>
+      <section class="field">
+        <h4 class="ui dividing header">Informações Pessoais</h4>
+        <div class="evaluation-form__sub row two fields">
+          <div class="field ui small input"><input type="text" id="input-name" placeholder="Nome"></div>
+          <div class="field ui small input"><input type="text" id="input-lastname" placeholder="Sobrenome"></div>
+        </div>
+        <div class="evaluation-form__sub row two fields">
+          <div class="field ui small input"><input type="email" id="input-email" placeholder="Email"></div>
+          <div class="field row ui small input">
+            <label for="house">Casa:&nbsp;</label>
+            <select name="jj" id="house">
+              <option value="" id="">Escolha sua Casa</option>
+              <option value="gitnoria" id="gitnoria-house">Gitnória</option>
+              <option value="reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="corvinode" id="corvinode-house">Corvinode</option>
+              <option value="pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <section class="field ">
+        <h4 class="ui dividing header">Informações Adicionais</h4>
+        <div class="row exception row--small">
+          <div class="column especial--1 ">
+            <label for="" id="label-family">Qual sua família?</label>
+            <div class="self"><input type="radio" value="Frontend" name="family">Frontend</div>
+            <div class="self"><input type="radio" value="Backend" name="family">Backend</div>
+            <div class="self"><input type="radio" value="FullStack" name="family">FullStack</div>
+          </div>
+          <div class="column especial--2">
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div class="row exception">
+              <div class="column">
+                <div class="self"><input type="checkbox" value="HoFs" name="conteudo" class="subject">HoFs</div>
+                <div class="self"><input type="checkbox" value="Jest" name="conteudo" class="subject">Jest</div>
+              </div>
+              <div class="column">
+                <div class="self"><input type="checkbox" value="Promises" name="conteudo" class="subject">Promises</div>
+                <div class="self"><input type="checkbox" value="React" name="conteudo" class="subject">React</div>
+              </div>
+              <div class="column">
+                <div class="self"><input type="checkbox" value="SQL" name="conteudo" class="subject">SQL</div>
+                <div class="self"><input type="checkbox" value="Python" name="conteudo" class="subject">Python</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="field ">
+        <h4 class="ui dividing header"></h4>
+        <div class="row2 row--small">
+          <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+          <div class="row3">
+            <input class="yeah"type="radio" name="rate" value="1">1
+            <input type="radio" name="rate" value="2">2
+            <input type="radio" name="rate" value="3">3
+            <input type="radio" name="rate" value="4">4
+            <input type="radio" name="rate" value="5">5
+            <input type="radio" name="rate" value="6">6
+            <input type="radio" name="rate" value="7">7
+            <input type="radio" name="rate" value="8">8
+            <input type="radio" name="rate" value="9">9
+            <input type="radio" name="rate" value="10">10
+          </div>
+        </div>
+      </section>
+      <section class="field">
+        <h4 class="ui dividing header"></h4>
+        <div class="column">
+          <label for="textarea" class="textarea">Deixe seu comentário:</label>
+          <textarea id="textarea" maxlength="500" rows="2"></textarea>
+          <div>Restam <spam id="counter">500</spam> caracteres</div>
+        </div>
+      </section>
+      <h4 class="ui dividing header"></h4>
+      <section class="field">
+        <div class="row">
+          <label for="" id="label-infos">Você concorda com o uso das informações acima?"</label>
+          <div class="row"><input type="checkbox" name="" id="agreement" value="">Eu concordo</div>
+        </div>
+      </section>
+      <div>
+        <button type="submit" id="submit-btn" class="ui primary button" disabled>Enviar</button>
+      </div>
+    </form>
+    <div class="row">
+      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo" class="size--large">
+    </div>
+  </main>
+  <footer class="footer">
+    <h2>Direitos reservados à Trybewarts©</h2>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

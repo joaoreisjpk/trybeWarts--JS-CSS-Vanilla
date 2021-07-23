@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(50, 167, 145);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+h4 {
+  margin-top: 1rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.container.header {
+  background-color: rgb(50, 167, 145);
+  height: 4rem;
+  padding: .2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exception{
+  align-items: flex-start;
+}
+
+.row2 {
+  display: flex;
+  align-items: center;
+}
+.row3 {
+  display: flex;
+  align-items: center;
+}
+
+.row3 > * {
+  margin: 0 .3rem;
+}
+
+form.form {
+  margin-top: 2rem;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.especial--1 {
+ width: 27%;
+}
+
+.especial--2 {
+  width: 66%;
+}
+
+.yeah {
+  margin-left: 2rem;
+}
+
+.self {
+  margin-top: .5rem;
+}
+
+#label-content, #label-family {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#agreement {
+  margin-right: .3rem;
+}
+
+#submit-btn {
+  width:100%;
+}
+
+.footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #fff;
+  background-color: gray;
+}
+
+.subject {
+  margin: 3px 4px 0 0;
+}
+
+@media (max-width: 1070px) {
+  main.row {
+    flex-direction: column-reverse;
+  }
+  #trybewarts-forms-logo {
+    height: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  main.row {
+    flex-direction: column-reverse;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+  }
+}
+
+@media (max-width:600px) {
+  .container.header {
+    background-color: rgb(50, 167, 145);
+    height: 8rem;
+    padding: .2rem;
+  }
+  #botão {
+    width: 177px;
+  }
+  .row--small {
+    flex-direction: column;
+  }
+  .yeah {
+    margin-left: 0;
+  }
+  #label-content {
+    margin-top: 2rem;
+  }
+  #label-rate {
+    margin-bottom: 1rem;
+  }
+  .especial--1 {
+    width: auto;
+    margin: auto;
+   }
+   
+  .especial--2 {
+    width: auto;
+    margin: auto;
+  }
+  * {
+    text-align: center;
+  }
+  h4 {
+    font-size: 1.5rem !important;
+  }
+}
