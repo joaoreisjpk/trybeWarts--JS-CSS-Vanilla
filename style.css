@@ -8,6 +8,7 @@ body {
 
 header {
   background-color: rgb(50, 167, 145);
+
 }
 
 img {
@@ -19,10 +20,16 @@ h1 {
   margin: 0;
 }
 
-h4 {
+h4, h3, h2 {
   margin-top: 1rem;
 }
 
+input:hover:not(#input-name, #input-lastname, #input-email, #login, #senha),
+button:hover,
+label:hover,
+select:hover {
+  cursor: pointer;
+}
 .container {
   width: 90%;
   margin: auto;
@@ -47,10 +54,55 @@ h4 {
   align-items: center;
 }
 
+#row--submit {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  justify-content: space-around;
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  background: rgba(128, 128, 128, 0.11);
+  border: 2px solid black;
+}
+
+#nick {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: "Magic School Two";
+  margin-bottom: 2rem;
+}
+
+.font {
+  font-family: "Magic School Two" !important;
+  font-weight: 400 !important;
+  font-size: 2.5rem !important;
+  line-height: 2.5rem !important;
+}
+
+.font-1 {
+  font-size: 3rem !important;
+}
+
+.font-2 {
+  font-size: 2rem !important;
+}
+h4.font {
+  border-bottom: 2px solid rgba(34,36,38,.15)!important;
+  margin-bottom: .3rem;
+}
 .exception{
   align-items: flex-start;
 }
 
+#evaluation-form {
+  width: min(600px,100%);
+}
+
+#trybewarts-forms-logo {
+  padding: 1rem 0;
+}
 .row2 {
   display: flex;
   align-items: center;
@@ -65,7 +117,7 @@ h4 {
 }
 
 form.form {
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 #trybewarts-forms-logo {
@@ -103,7 +155,6 @@ form.form {
 
 .footer {
   padding: 1rem;
-  margin-top: 2rem;
   text-align: center;
   color: #fff;
   background-color: gray;
@@ -113,20 +164,21 @@ form.form {
   margin: 3px 4px 0 0;
 }
 
+#result {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
 @media (max-width: 1070px) {
-  main.row {
+  .main.row {
     flex-direction: column-reverse;
   }
   #trybewarts-forms-logo {
-    height: 270px;
+    height: 300px;
   }
 }
 
 @media (max-width: 767px) {
-  main.row {
-    flex-direction: column-reverse;
-  }
-
   #trybewarts-header-title {
     display: none;
   }
