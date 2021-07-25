@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+main {
+  min-height: 85.2vh;
+}
+
 header {
   background-color: rgb(50, 167, 145);
 
@@ -70,8 +74,13 @@ select:hover {
   text-align: center;
   font-size: 3.5rem;
   font-weight: 100;
-  font-family: "Magic School Two";
+  font-family: 'Magic School Two';
   margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: "Magic School Two";
+  src: url("./font/MagicSchoolTwo.ttf");
 }
 
 .font {
