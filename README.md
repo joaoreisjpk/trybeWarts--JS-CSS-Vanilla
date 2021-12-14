@@ -4,9 +4,9 @@
 
 Desafio do curso de FullStack Developer da TRYBE https://www.betrybe.com/
 
-[DEMO](https://vercel.com/regariou/trybewarts)
+[Clique para visualizar o site/demo](https://vercel.com/regariou/trybewarts)
 
-![plot](./images/trybeWartsPreview.png.png)
+![plot](./images/trybeWartsPreview.png)
 
 ## Tech em uso
 
