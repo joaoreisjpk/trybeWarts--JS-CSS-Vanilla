@@ -1,62 +1,39 @@
 # Project Trybe Trivia 🚀
 
-This is the second project of the Trybe course developed as a team. It's a trivia game that gets the questions from Open Trivia Database API, and the avatar picture from Gravatar API.
+### Trivia GAME
 
-The app has some settings for the questions, marks the score and builds a ranking that is saved in the `localstorage`.
+Desafio do curso de FullStack Developer da TRYBE https://www.betrybe.com/
 
-That was a great opportunity to practice my soft skills, as well the hard skills (specially `React`). The project was developed in a transition period for `hooks`, hence the mix between `classes` and `functions`.
+[DEMO](https://vercel.com/regariou/trybewarts)
 
-We decided to style our projects individually, so the style was fully developed by me, a great opportunity to learn how to use the `Material UI`.
+![plot](./images/trybeWartsPreview.png.png)
 
-**The app's interface is in Brazilian Portuguese as a mandatory project requirement, however the questions and filters are in English, as they come from the API.**
+## Tech em uso
 
-`Requirements`
+[JavaScript] Aplication </br>
+  - Nessa aplicação tive auxílio da biblioteca [Semantic UI](https://opentdb.com/api_config.php) paa fazer minha estilização
 
-User must be able to complete the game and be able to see their score after answering all 5 questions, in addition to accessing the settings and ranking screen.
+# Habilidades desenvolvidas.
 
+-Lidar com Forms em JavaScript </br>
 
-- 1 - Create the login page, where the person who plays must fill in the information to start a game;
+-Utilização de eventos para mudar a estilização da página e submeter o form de forma personalizada</br>
 
-- 2 - Create game start button;
+-Validação das informações preenchidas
 
-- 3 - Create a button that takes the person to the configuration page;
+-Fazer uma aplicação mobile First </br>
 
-- 4 - Create a `header` that should contain user information;
+-Fazer uma aplicação completamente responsiva </br>
 
-- 5 - Create the game page that should contain the information related to the question;
+-Aprender a lidar com flex-box </br>
 
-- 6 - Develop the game where it should only be possible to choose one correct answer per question;
+# O que foi desenvolvido.
 
-- 7 - Develop the style that, when you click on an answer, the correct one should be green (I changed it to blue) and the incorrect ones red;
+Um form para se cadastrar na escola TrybeWarts, nela você pode preencher seu nome completo e escolher sua casa, sua família e tecnologias favoritas, dependendo da
+casa escolhida o background irá mudar, e, caso os campos não estejam preenchidos não será possível realizar o submit.
+Uma vez que o submit seja feito, será carregado uma resposta para confirmar as informações preenchidas, nela aparecerá um nome personalizado dependendo de qual casa foi escolhida.
 
-- 8 - Develop a timer where the player has 30 seconds to answer;
-
-- 9 - Create the scoreboard with the following characteristics:
-
-  * You must save the **current** score in `localStorage`;
-  * Wrong answers should not add up to the score;
-  * The formula for calculating points per question is: `10 + (timer * difficulty)`, where timer is the time remaining in the time and difficulty counter is `hard: 3, medium: 2, easy: 1`, depending on the question.
-
-- 10 - Create a "next" button that appears after the answer is given;
-
-- 11 - Design the game so that the person who plays must answer 5 questions in total;
-
-- 12 - Develop the _feedback_ header that should contain the player information;
-
-- 13 - Create the _feedback_ message to be displayed to the user;
-
-- 14 - Display information related to the results obtained for the user;
-
-- 15 - Create the option for the player to be able to play again;
-
-- 16 - Create the option for the player to be able to view the _ranking_ screen;
-
-- 17 - Create the _ranking_ screen;
-
-- 18 - Create a button to go to the home page;
-
-- 19 - When changing the category dropdown value, only questions from the selected category should appear for the person playing;
-
-- 20 - When changing the value of the difficulty dropdown, only questions of the selected difficulty should appear for the person playing;
-
-- 21 - When changing the value of the type dropdown, only questions of the selected type should appear for the person playing;
+  - Preencher suas informações no Form.
+  - Back-Ground irá mudar dependendo da casa Escolhida.
+  - Botão submit só ficará disponível uma vez que todo form for preenchido.
+  - Com o submit será carregado uma outra página com as informações que o usuário preencheu e um nome customizado para o mesmo.
