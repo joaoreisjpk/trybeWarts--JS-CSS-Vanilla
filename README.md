@@ -11,7 +11,7 @@ Desafio do curso de FullStack Developer da TRYBE https://www.betrybe.com/
 ## Tech em uso
 
 [JavaScript] Aplication </br>
-  - Nessa aplicação tive auxílio da biblioteca [Semantic UI](https://opentdb.com/api_config.php) paa fazer minha estilização
+  - Nessa aplicação tive auxílio da biblioteca [Semantic UI](https://semantic-ui.com/) paa fazer minha estilização
 
 # Habilidades desenvolvidas.
 
